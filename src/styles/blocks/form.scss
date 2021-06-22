@@ -32,7 +32,13 @@
 
   @include tablet {
     &-fieldsize {
-      width: 410px;
+      max-width: 380px;
+    }
+  }
+
+  @media (min-width: 900px) {
+    &-fieldsize {
+      width: 420px;
     }
   }
 }
