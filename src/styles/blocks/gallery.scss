@@ -1,0 +1,96 @@
+.gallery {
+  padding-bottom: 64px;
+  &__hotel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 16px;
+    margin-bottom: 32px;
+
+    &_description {
+      grid-column: 1/3;
+    }
+    &_img {
+      width: 100%;
+      height: 256px;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 0.7s;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    &_text {
+      font-size: 16px;
+      line-height: 27px;
+      margin-bottom: 15px;
+    }
+
+    &_link {
+      position: relative;
+      text-decoration: none;
+      color: $main-color;
+      font-weight: bold;
+
+      &::after {
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        content: "";
+        width: 0;
+        height: 1px;
+        background-color: #0075ff;
+        transition: width 0.3s;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+
+  @include desktop {
+    &__hotel {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 16px 30px;
+      margin-bottom: 32px;
+    }
+
+    &__desktop--residens {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__desktop--faena {
+      grid-template-columns: 1fr 2fr;
+    }
+
+    &__btn {
+      width: 150px;
+    }
+  }
+
+  @include tablet {
+    &__hotel {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 16px 30px;
+      margin-bottom: 32px;
+    }
+
+    &__desktop--residens {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__desktop--faena {
+      grid-template-columns: 1fr 2fr;
+    }
+
+    &__btn {
+      width: 150px;
+    }
+  }
+}

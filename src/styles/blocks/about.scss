@@ -1,0 +1,55 @@
+.about {
+  padding: 64px 0;
+
+  &__title {
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: -1.5px;
+    margin-bottom: 56px;
+
+    &--color {
+      color: $main-color;
+      text-decoration: none;
+      transition: color 0.5s;
+
+      &:hover {
+        color: red;
+      }
+    }
+  }
+
+  &__inscription {
+    font-size: 24px;
+    line-height: 30px;
+    color: $main-color;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 30px;
+  }
+
+  @include desktop {
+    &__wrap--title {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__wrap--aricle {
+      max-width: 500px;
+    }
+  }
+
+  @include tablet {
+    &__wrap--title {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__wrap--aricle {
+      max-width: 500px;
+    }
+  }
+}

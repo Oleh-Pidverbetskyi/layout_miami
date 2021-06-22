@@ -1,0 +1,63 @@
+.testimonials {
+  padding-bottom: 64px;
+
+  &__card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  &__img {
+    border-radius: 50%;
+    max-width: 150px;
+    max-height: 150px;
+    margin-bottom: 28px;
+    transition: transform 0.7s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__name {
+    color: $main-color;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    text-decoration: none;
+    transition: transform 0.7s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__position {
+    font-size: 14px;
+    line-height: 27px;
+    margin-bottom: 4px;
+    color: $position-text-color;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 27px;
+    max-width: 320px;
+  }
+
+  @include tablet {
+    &__wrap {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+    }
+  }
+
+  @include desktop {
+    &__wrap {
+      gap: 24px;
+    }
+  }
+}

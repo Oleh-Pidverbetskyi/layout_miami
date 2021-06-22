@@ -1,0 +1,27 @@
+.phone {
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    list-style: none;
+    margin-bottom: 16px;
+
+    &:last-child::after {
+      display: block;
+      margin-top: 8px;
+      content: "";
+      height: 1px;
+      width: 111px;
+      background-color: $white;
+    }
+  }
+
+  &__link {
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration: none;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}

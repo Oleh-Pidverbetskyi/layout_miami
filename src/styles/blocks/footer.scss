@@ -1,0 +1,16 @@
+.footer {
+  padding-bottom: 25px;
+  height: 320px;
+  background: url(../images/footer.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  @include desktop {
+    height: 360px;
+    padding-bottom: 34px;
+  }
+}

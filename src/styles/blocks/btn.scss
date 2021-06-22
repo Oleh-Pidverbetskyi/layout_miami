@@ -1,0 +1,22 @@
+.btn {
+  display: block;
+  max-width: 280px;
+  padding: 21px;
+  margin: 0 auto;
+  width: 280px;
+  border: 2px solid $main-color;
+  border-radius: 8px;
+  text-decoration: none;
+  color: $main-color;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  transition: background 0.7s, box-shadow 0.7s;
+
+  &:hover {
+    background: $hover-btn-color;
+    border: 2px solid $hover-btn-color;
+    color: $white;
+    box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46);
+  }
+}
